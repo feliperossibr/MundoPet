@@ -104,7 +104,26 @@ button {
   max-width: 54.5rem;
 }
 
+.btn {
+  box-shadow: 0 0 2.5rem rgba(146, 130, 250, 0.302);
+  background-color: var(--content-brand);
+  border-radius: .5rem;
+  color: #050505;
 
+  font: var(--label-lg);
+  text-transform: uppercase;
+  padding: .75rem 1.5rem;
+
+  transition: background-color .3s ease-in-out, scale .3s;
+  &:hover {
+    background-color: var(--bg-highlights);
+  }
+
+  &:focus {
+    outline: none;
+    scale: 1.1;
+  }
+}
 
 @media screen and (width >= 1024px) {
   .logo {
