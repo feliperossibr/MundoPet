@@ -1,6 +1,9 @@
-*, *::after, *::before {
+*, 
+*::after, 
+*::before {
   margin: 0;
   padding: 0;
+  border: 0;
   box-sizing: border-box;
 }
 
@@ -33,26 +36,39 @@
   --accent-orange-light: #75501b;
 
     /*  TYPOGRAPHY  */
-  --ff-title: "Inter Tight", sans-serif;
+  --title: 700 1.5rem/2 "Inter Tight", sans-serif;
 
-  --font-title: 700 1.5rem/2 var(--ff-title);
+  --ff-base: "Inter", sans-serif;
+  --p-md: 500 .875rem/1.5 var(--ff-base);
+  --p-sm: 500 .75rem/1 var(--ff-base);
 
-  --ff-text: "Inter", sans-serif;
+  --label-lg: 700 1rem/1.5 var(--ff-base);
+  --label-md: 700 .875rem/1.5 var(--ff-base);
+  --label-sm: 700 .75rem/1 var(--ff-base);
 
-  --fp-md: 500 .875rem/1.5 var(--ff-text);
-  --fp-sm: 500 .75rem/1 var(--ff-text);
-
-  --label-lg: 700 1rem/1.5 var(--ff-text);
-  --label-md: 700 .875rem/1.5 var(--ff-text);
-  --label-sm: 700 .75rem/1 var(--ff-text);
-
-  --font-link: 500 .75 var(--ff-text);
+  --link: 500 .75 var(--ff-base);
 }
 
-body {
-  background-color: var(--border-secondary);
+html, body {
+  width: 100%;
+  height: auto;
+  min-height: 100vh;
+  
+  background-color: #14151d;
+  color: var(--content-primary);
+  font-family: var(--ff-base);
 }
 
 p {
-  font: var(--label-lg);
+  color: var(--content-secondary);
+  font: var(--p-md);
+}
+
+a {
+  font: var(--link);
+  text-decoration: none;
+}
+
+h1 {
+  font: var(--title);
 }
