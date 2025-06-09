@@ -1,0 +1,58 @@
+*, *::after, *::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+    /*  Content  */
+  --content-primary: #ffffff;
+  --content-secondary: #98959d;
+  --content-tertiary: #666666;
+  --content-brand: #9282fa;
+
+    /*  Background  */
+  --bg-primary: #151515;
+  --bg-secondary: #1e1e1e;
+  --bg-tertiary: #23242c;
+  --bg-brand: #9282fa;
+  --bg-highlights: #bdb4fa;
+
+    /*  Border  */
+  --border-primary: #3e3c41;
+  --border-secondary: #86818c;
+  --border-brand: #9282fa;
+  --border-divisor: #353339;
+
+    /*  Accent  */
+  --accent-blue: #027df0;
+  --accent-blue-light: #16487a;
+  --accent-yellow: #f0dc02;
+  --accent-yellow-light: #756e1b;
+  --accent-orange: #f09102;
+  --accent-orange-light: #75501b;
+
+    /*  TYPOGRAPHY  */
+  --ff-title: "Inter Tight", sans-serif;
+
+  --font-title: 700 1.5rem/2 var(--ff-title);
+
+  --ff-text: "Inter", sans-serif;
+
+  --fp-md: 500 .875rem/1.5 var(--ff-text);
+  --fp-sm: 500 .75rem/1 var(--ff-text);
+
+  --label-lg: 700 1rem/1.5 var(--ff-text);
+  --label-md: 700 .875rem/1.5 var(--ff-text);
+  --label-sm: 700 .75rem/1 var(--ff-text);
+
+  --font-link: 500 .75 var(--ff-text);
+}
+
+body {
+  background-color: var(--border-secondary);
+}
+
+p {
+  font: var(--label-lg);
+}
