@@ -1,3 +1,9 @@
+@import url(./header.css);
+@import url(./form/input.css);
+@import url(./form/modal.css);
+@import url(./schedule.css);
+@import url(./footer.css);
+
 *, 
 *::after, 
 *::before {
@@ -71,4 +77,42 @@ a {
 
 h1 {
   font: var(--title);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  vertical-align: top;
+}
+
+button {
+  cursor: pointer;
+}
+
+.logo {
+  position: relative;
+  z-index: 100;
+}
+
+#app {
+  margin: .75rem auto 0;
+  padding: .75rem 1.25rem;
+
+  width: 100%;
+  max-width: 54.5rem;
+}
+
+
+
+@media screen and (width >= 1024px) {
+  .logo {
+    position: fixed;
+  }
+
+  #app {
+    padding: 5rem;
+    margin-top: 0;
+  }
 }

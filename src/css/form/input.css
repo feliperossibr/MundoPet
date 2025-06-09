@@ -1,0 +1,13 @@
+.input-date {
+  width: fit-content;
+}
+
+::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  background: url(../../assets/icons/arrow-down.svg) no-repeat center;
+}
+
+.input-wrapper {
+  display: grid;
+  gap: 1rem;
+}
