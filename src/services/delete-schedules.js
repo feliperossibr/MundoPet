@@ -4,7 +4,7 @@ export async function deleteSchedules(id) {
   try {
     await fetch(`${api.url}/schedules/${id}`, {
       method: "DELETE",
-    }),
+    });
 
     alert("Agendamento cancelado 🔴");
 
