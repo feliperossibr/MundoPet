@@ -1,9 +1,3 @@
-@import url(./header.css);
-@import url(./form/input.css);
-@import url(./form/modal.css);
-@import url(./schedule.css);
-@import url(./footer.css);
-
 *, 
 *::after, 
 *::before {
