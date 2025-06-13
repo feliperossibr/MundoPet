@@ -1,12 +1,16 @@
-"use strict"
+"use strict";
 
 // Configuração do dayjs
-import "./libs/dayjs.js"
+import "./libs/dayjs.js";
 
 // CSS
-import "./css/global.css"
-import "./css/schedule.css"
-import "./css/header.css"
-import "./css/footer.css"
-import "./css/form/input.css"
-import "./css/form/modal.css"
+import "./css/global.css";
+
+// JS
+import "./modules/modal/open-and-close-modal.js";
+import "./modules/modal/submit.js";
+import "./modules/modal/date-change.js";
+
+import "./modules/schedules/cancel-schedules.js";
+
+import "./modules/page-load.js";

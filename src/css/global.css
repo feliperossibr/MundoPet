@@ -1,3 +1,9 @@
+@import url("./header.css");
+@import url("./form/inputs.css");
+@import url("./form/modal.css");
+@import url("./schedule.css");
+@import url("./footer.css");
+
 *, 
 *::after, 
 *::before {
@@ -96,6 +102,18 @@ button {
 
   width: 100%;
   max-width: 54.5rem;
+}
+
+#modal {
+  display: none;
+}
+
+#modal.active {
+  display: block;
+}
+
+.footer-hidden {
+  display: none;
 }
 
 .btn {
