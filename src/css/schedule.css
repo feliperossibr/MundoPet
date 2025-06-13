@@ -1,64 +1,64 @@
-.schedule {
+.schedule{
   display: grid;
   gap: .875rem;
   margin-top: 2rem;
 
-  & > :last-child {
+  & > :last-child{
     margin-bottom: 6.25rem;
   }
 }
 
-.schedule-period {
-  background-color: var(--bg-tertiary);
+.schedule-period{
+  background-color: var(--background-tertiary);
   border-radius: .625rem;
 
-  & > header {
+  & > header{
     display: flex;
     align-items: center;
     gap: .75rem;
 
-    padding: .75ren 1.25rem;
-    border-bottom: .0625rem solid #2e2c30;
+    padding: .75rem 1.25rem;
+    border-bottom: .0625rem solid #2E2C30;
 
-    & > h2 {
+    & > h2{
       font: var(--label-lg);
       margin-right: auto;
     }
 
-    & > span {
+    & > span{
       font: var(--label-lg);
       color: var(--content-secondary);
     }
   }
 }
 
-.period {
+.period{
   display: flex;
   flex-direction: column;
   padding: 1.25rem;
 
-  & > li {
+  & li{
     padding: .75rem;
 
-    & > strong {
+    & strong{
       font: var(--label-md);
-
-      & > .hour {
+      
+      &.hour{
         margin-right: .75rem;
       }
     }
 
-    & > span {
+    & span{
       font: var(--p-md);
       color: var(--content-secondary);
 
-      & > .service-desc {
+      &.service-desc{
         display: block;
         margin-bottom: .5rem;
       }
     }
 
-    & > .remove {
+    & .remove{
       display: block;
       font: var(--p-sm);
       margin-left: auto;
@@ -66,35 +66,35 @@
       background: none;
       color: var(--content-tertiary);
 
-      &:hover {
+      &:hover{
         color: var(--content-primary);
         text-decoration: underline;
       }
     }
   }
 
-  & > li + li {
+  & > li + li{
     border-top: .0625rem solid var(--border-divisor);
     padding-top: 1.75rem;
   }
 }
 
 @media screen and (width >= 1024px) {
-  .schedule > :last-child {
+  .schedule > :last-child{
     margin-bottom: 0;
   }
 
-  .period > li {
+  .period li{
     display: grid;
     gap: 2rem;
     grid-template-columns: 1.45fr 1fr 1fr;
 
-    & > span > .service-desc {
+    & span.service-desc{
       margin-bottom: 0;
       justify-self: flex-start;
     }
 
-    & > .remove {
+    & .remove{
       margin: initial;
       justify-self: flex-end;
     }
