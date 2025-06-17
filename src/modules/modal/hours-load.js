@@ -43,6 +43,6 @@ function hourTitle(content) {
   const title = document.createElement("option");
   title.textContent = content;
   title.disabled = true;
-  title.classList.add("title-option"); // opcional: estilizar no CSS
+  title.classList.add("title-option");
   hours.append(title);
 }

@@ -23,19 +23,9 @@
   border-radius: .5rem;
   padding-inline: .75rem;
   height: 3rem;
-
   display: flex;
   align-items: center;
   gap: .625rem;
-
-  & > input {
-    all: unset;
-    width: 100%;
-    color: var(--content-secondary);
-
-    font-size: 1rem;
-    font-weight: 400;
-  }
 
   &:hover {
     outline-color: var(--border-secondary);
@@ -43,6 +33,15 @@
 
   &:focus-within {
     outline-color: var(--border-brand);
+  }
+
+  > input {
+    all: unset;
+    width: 100%;
+    color: var(--content-secondary);
+
+    font-size: 1rem;
+    font-weight: 400;
   }
 }
 
@@ -78,7 +77,7 @@ textarea {
 .select {
   position: relative;
 
-  & > select {
+  > select {
     appearance: none;
     color: var(--content-secondary);
     background-color: transparent;

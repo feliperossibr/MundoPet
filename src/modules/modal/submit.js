@@ -56,8 +56,8 @@ form.onsubmit = async (event) => {
     phone.value = "",
     serviceDescription.value = "";
 
-    modal.style.display = "none";
-    footer.style.display = "initial";
+    modal.classList.remove("active");
+    footer.classList.remove("hidden");
 
   } catch (error) {
     alert("Não foi possível realizar o agendamento!");

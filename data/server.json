@@ -1,25 +1,5 @@
 {
   "schedules": [
-    {
-      "id": "1749823283413",
-      "tutor": "Felipe Rossi",
-      "pet": "Floquinho",
-      "desc": "Banho",
-      "when": "2025-06-14T13:00:00.000Z"
-    },
-    {
-      "id": "1749823322800",
-      "tutor": "Felipe Rossi",
-      "pet": "Floquinho",
-      "desc": "tosa",
-      "when": "2025-06-13T18:00:00.000Z"
-    },
-    {
-      "id": "1749823815473",
-      "tutor": "Felipe Rossi",
-      "pet": "Floquinho",
-      "desc": "Banho",
-      "when": "2025-06-13T19:00:00.000Z"
-    }
+    
   ]
 }

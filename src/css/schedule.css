@@ -9,7 +9,7 @@
 }
 
 .schedule-period{
-  background-color: var(--background-tertiary);
+  background-color: var(--bg-tertiary);
   border-radius: .625rem;
 
   & > header{

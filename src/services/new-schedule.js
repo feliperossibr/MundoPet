@@ -1,4 +1,5 @@
 import { api } from "./api.js";
+import { loadSchedulesDay } from "../modules/schedules/load-schedules-day.js";
 
 export async function newSchedule({ id, tutor, pet, desc, when }) {
   try {
@@ -15,6 +16,8 @@ export async function newSchedule({ id, tutor, pet, desc, when }) {
     }
 
     alert("Agendamento realizado com sucesso 🎉");
+
+    await loadSchedulesDay();
 
   } catch (error) {
     alert("Não foi possível realizar o agendamento! Tente novamente!");

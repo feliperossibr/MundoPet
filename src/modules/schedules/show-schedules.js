@@ -6,7 +6,7 @@ const night = document.querySelector("#night");
 
 export function showSchedules(dailySchedules) {
   try {
-    if (!morning || !afeternoon || !night) {
+    if (!morning || !afternoon || !night) {
       console.warn("Elementos de períodos não encontrados no DOM.");
       return;
     }
